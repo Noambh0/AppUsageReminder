@@ -15,7 +15,7 @@ const style = StyleSheet.create({
 
 type CardProps = {
     cardLeftX? : number;
-    cardTopY : number;
+    cardTopY? : number;
     cardWidth : number;
     cardHeight : number;
     children?: ReactNode;
@@ -28,8 +28,7 @@ export default function CardCompo({cardLeftX: leftX, cardTopY: topY, cardWidth, 
             left : leftX,
             top : topY,
             width : cardWidth,
-            height : cardHeight,
-            
+            height : cardHeight, 
         },
     ]}> 
         {children} 
