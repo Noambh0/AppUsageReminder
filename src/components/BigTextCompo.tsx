@@ -4,7 +4,6 @@ import { AppFonts } from '../constants/UIconstants';
 
 const style = StyleSheet.create({
     bigText: {
-        fontSize : 40,
         fontWeight: '700',
         fontFamily : AppFonts.TEXT_FONT,
         color : AppColors.BIG_TEXT_COLOR
@@ -13,13 +12,14 @@ const style = StyleSheet.create({
 
 type bigTextProps = {
     text : String;
+    fontSize : number;
     bigTextLeftX? : number;
     bigTextTopY? : number;
 }
 
-export default function BigTextCompo({text, bigTextLeftX: LeftX, bigTextTopY: topY} : bigTextProps) {
+export default function BigTextCompo({text, fontSize : fontSize, bigTextLeftX: LeftX, bigTextTopY: topY} : bigTextProps) {
     return (
-        <Text style={[style.bigText, {left : LeftX, top : topY,},]}> 
+        <Text style={[style.bigText, {fontSize : fontSize, left : LeftX, top : topY}]}> 
             {text}
         </Text>                
     )
