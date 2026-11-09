@@ -39,6 +39,7 @@ function MostUsedAppsCard() {
         <CardCompo cardTopY={310} cardWidth={350} cardHeight={370}>
             <BigTextCompo fontSize={20} bigTextLeftX={0} bigTextTopY={-5} text="Most Used App"/>
             <ArrowButtonCompo ArrowButtonLeftX={269} ArrowButtonTopY={-32} ArrowButtonHeight={40} ArrowButtonWidth={100}/>
+            <SmallTextCompo fontSize={18} smallTextLeftX={210} smallTextTopY={-67} text="All Apps"/>
         </CardCompo>
     )
 }
