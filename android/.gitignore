@@ -12,7 +12,6 @@ local.properties
 *.hprof
 .cxx/
 gradle/gradle-daemon-jvm.properties
-app/debug.keystore
 
 # generated inline modules
 app/src/main/java/inline/
