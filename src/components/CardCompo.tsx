@@ -4,7 +4,6 @@ import { Children, type ReactNode } from 'react';
 
 const style = StyleSheet.create({
     card: {
-        backgroundColor: AppColors.CARD_COLOR,
         borderRadius: 26,
         borderWidth: 1,
         borderColor: '#292F35',
@@ -14,6 +13,7 @@ const style = StyleSheet.create({
 })
 
 type CardProps = {
+    cardColor : string;
     cardLeftX? : number;
     cardTopY? : number;
     cardWidth : number;
@@ -21,10 +21,11 @@ type CardProps = {
     children?: ReactNode;
 };
 
-export default function CardCompo({cardLeftX: leftX, cardTopY: topY, cardWidth, cardHeight, children} : CardProps) {
+export default function CardCompo({cardColor: cardColor, cardLeftX: leftX, cardTopY: topY, cardWidth, cardHeight, children} : CardProps) {
     return (
         <View style={[style.card, {
             position : 'absolute',
+            backgroundColor : cardColor,
             left : leftX,
             top : topY,
             width : cardWidth,

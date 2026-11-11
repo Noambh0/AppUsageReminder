@@ -11,7 +11,7 @@ const style = StyleSheet.create({
 })
 
 type bigTextProps = {
-    text : String;
+    text : string | number;
     fontSize : number;
     bigTextLeftX? : number;
     bigTextTopY? : number;
