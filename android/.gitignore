@@ -20,9 +20,9 @@ app/src/main/java/inline/
 *.jsbundle
 
 # Android generated files
-/android/.gradle/
-/android/build/
-/android/app/build/
-/android/.cxx/
+
 /android/app/.cxx/
-/android/local.properties
+/android/app/build/
+/android/app/build.gradle
+/android/app/debug.keystore
+/android/app/proguard-rules.pro
