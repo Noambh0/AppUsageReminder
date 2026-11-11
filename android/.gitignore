@@ -18,3 +18,11 @@ app/src/main/java/inline/
 
 # Bundle artifacts
 *.jsbundle
+
+# Android generated files
+/android/.gradle/
+/android/build/
+/android/app/build/
+/android/.cxx/
+/android/app/.cxx/
+/android/local.properties
